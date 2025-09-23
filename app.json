@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "Velotrab App",
+    "slug": "Velotrab",
+    "version": "1.0.16",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }, 
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "entitlements": {
+        "aps-environment": "production"
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.velotrab.velotrab.app",
+      "buildNumber": "16",
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification"],
+        "NSCameraUsageDescription": "Precisamos da permissão da câmera, será usado para você poder tirar fotos de documentos e comprovantes.",
+        "NSPhotoLibraryUsageDescription": "Precisamos da permissão da biblioteca de mídia, será usado para você subir fotos de documentos e comprovantes de sua galeria.",
+        "NSLocationWhenInUseUsageDescription": "Precisamos da permissão para acessar sua localização, será usado para registrar ponto digital e garantir sua segurança da informação.",
+        "NSFaceIDUsageDescription": "Este aplicativo usa o Face ID para autenticá-lo com segurança.",
+        "NSTouchIDUsageDescription": "Este aplicativo usa o Touch ID para autenticá-lo com segurança.",
+        "NSAppTransportSecurity": {
+          "allowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "USE_BIOMETRIC",
+        "NOTIFICATIONS",
+        "INTERNET",
+        "VIBRATE"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.velotrab.velotrab.app",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "velotrab",
+              "host": "*.myapp.io",
+              "pathPrefix": "/velotrab"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "plugins": [
+      "@react-native-firebase/app"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c89acb4f-e11a-4d5c-9703-7bde5c731cc2"
+      }
+    }
+  }
+}

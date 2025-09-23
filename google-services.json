@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "957626494515",
+    "project_id": "velotrab-234a9",
+    "storage_bucket": "velotrab-234a9.firebasestorage.app"
+  },
+  "client": [
+    { 
+      "client_info": {
+        "mobilesdk_app_id": "1:957626494515:android:514c807077cbd7cfc0fd46",
+        "android_client_info": {
+          "package_name": "com.velotrab.velotrab.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSlaGc-DvDaYiG_gV8fiywzSJFj1_AECk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
